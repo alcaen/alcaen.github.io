@@ -1,0 +1,53 @@
+@font-face {
+  font-family: Jack;
+  src: url(/resources/JackFrost.otf);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #6b0919ad;
+  overflow: hidden;
+  font-family: Jack;
+  font-size: large;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 22px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #00ffb9e6;
+  color: #000000af;
+}
+
+/* circle avatar on top */
+#top_avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 100% 1%;
+  width: 60px;
+  height: 60px;
+  float: right;
+}
+
+body {
+  margin: 0%;
+  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/831329297499783601/2C02E0C47153312D81886234A66DB730BE63D347/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true.gif");
+  background-size: cover;
+  background-position: 90% -29%;
+  background-repeat: no-repeat;
+
+}
