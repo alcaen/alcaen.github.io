@@ -34,13 +34,25 @@
 }
 
 /* circle avatar on top */
-#top_avatar {
+#avatar {
   border-radius: 50%;
-  object-fit: cover;
-  object-position: 100% 1%;
   width: 60px;
   height: 60px;
   float: right;
+  padding: 0px;
+}
+
+#avatar:hover{
+  background-color: #00ffb9e6;
+}
+
+#top-avatar {
+  object-position: 100% 1%;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+
 }
 
 body {
@@ -49,4 +61,44 @@ body {
   background-size: cover;
   background-position: 0px 63px;
   background-repeat: no-repeat;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.wrapper div{
+  margin: 8px;
+  padding: 8px;
+}
+.one {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  background-color: white;
+}
+.two {
+  grid-column: 2 / 3;
+  grid-row: 1;
+  opacity: 90%;
+  background-color: none;
+}
+.three {
+  grid-column: 3 / 3;
+  grid-row: 1;
+  background-color: aqua;
+}
+.wrapper div a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 22px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.wrapper div a img {
+  width: 100px;
+  height: 100px;
+
 }
