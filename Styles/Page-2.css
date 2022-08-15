@@ -1,0 +1,126 @@
+.material-symbols-rounded {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 200,
+        'opsz' 48,
+}
+
+.page-2-info-container {
+    display: flex;
+    justify-content: center;
+}
+
+.page-2-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 37em;
+    margin-top: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+.page-2-title {
+    font-size: 2.3em;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+
+}
+
+.page-2-description {
+    font-size: 2em;
+    font-family: Roboto, sans-serif;
+    color: rgb(112, 112, 112);
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.grid-flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-page-2 {
+    /* margin-left: 23em; */
+    /* margin-right: 23em; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 4em;
+    margin-top: 3.5em;
+    margin-bottom: 4em;
+    width: 1300px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width:810px) {
+    .grid-page-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width:600px) {
+    .grid-page-2 {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.grid-page-2-container {
+    background-color: white;
+    height: 110%;
+    border-radius: 2%;
+}
+
+.grid-page-2-head {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-page-2-head:hover,
+.grid-page-2-head:hover>.grid-page-2-title,
+.grid-page-2-head:hover>.material-symbols-rounded {
+    color: rgb(224, 69, 103);
+    transition: 0.5s;
+    font-variation-settings: 'FILL' 1;
+}
+
+
+.material-symbols-rounded {
+    align-self: center;
+    color: rgb(224, 69, 103);
+    margin-bottom: 0.5em;
+}
+
+span.size-48 {
+    font-size: 48px;
+    font-variation-settings: 'OPSZ' 48;
+
+}
+
+.grid-page-2-title {
+    align-self: center;
+    color: black;
+    font-family: Roboto, sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.grid-page-2-content {
+    font-family: Roboto, sans-serif;
+    color: gray;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 1.8em;
+    line-height: 2;
+    text-align: center;
+    font-size: 1em;
+}

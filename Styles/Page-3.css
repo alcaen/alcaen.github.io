@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap);
+
+.card-list {
+    /* color: black; */
+    display: flex;
+    padding: 3rem;
+    overflow-x: scroll;
+    /* Overflow-x makes that only the elements inside it scroll to x not all the page  */
+    background-color: #020E30;
+    margin-top: 3rem;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 350px;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background-color: #071B50;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.card:hover~.card {
+    transform: translateX(130px);
+}
+
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+
+.card-author {
+    position: relative;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+    margin: 3rem 0 0;
+}
+
+
+.author-avatar {
+    height: 40px;
+    width: 40px;
+    z-index: 10;
+}
+
+.author-avatar img {
+    display: block;
+    width: 100%;
+    /* height: 40px; */
+    border-radius: 50%;
+    /* filter: grayscale(100%); */
+    /* the filter is to make the picture black and white */
+    /* margin: 18px 6px; */
+}
+
+.half-circle {
+    position: absolute;
+    bottom: -18px;
+    left: -6px;
+    width: 52px;
+    height: 50px;
+    fill: none;
+    stroke: #E04567;
+    stroke-width: 8;
+    stroke-linecap: round;
+}
+
+.author-name-prefix {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card-header a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+
+.card-header a:hover,
+.card-header p:hover,
+.author-name:hover {
+    background: linear-gradient(90deg, rgba(197, 71, 255, 1), #E04567);
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: 0.2s;
+}
+
+/* PSEUDO ELEMENTS */
+/* This are not avaliable in all browsers included mozilla. */
+/* .card-list::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.card-list::-webkit-scrollbar-thumb {
+    background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
+}
+
+.card-list::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+} */

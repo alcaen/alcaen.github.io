@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    background-color: rgb(247, 248, 249);
+    padding: 0;
+    color: white;
+    font-family: Roboto;
+}
+
+html {
+    height: 100%
+}
