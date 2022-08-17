@@ -48,7 +48,7 @@
 .author-avatar {
     height: 40px;
     width: 40px;
-    z-index: 10;
+    z-index: 5;
 }
 
 .author-avatar img {

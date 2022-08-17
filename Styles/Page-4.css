@@ -1,0 +1,155 @@
+.footer-container {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding-bottom: 1rem;
+    background-color: #1A1A1A;
+    /* flex-direction: column; */
+
+}
+
+.footer-left {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    max-width: 700px;
+    min-width: 350px;
+    margin-right: 100px;
+}
+
+.company-logo-container {
+    height: 30px;
+    margin-left: 1rem;
+}
+
+.company-logo-image {
+    height: 100%;
+    border-radius: 100%;
+}
+
+.footer-left h3 {
+    padding-top: 0;
+    margin-top: 5px;
+}
+
+.footer-mid {
+    flex: 1;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    min-width: 250px;
+    max-width: 250px;
+
+    /* background-color: blue; */
+}
+
+.footer-mid a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-mid a div {
+    display: inline-block;
+}
+
+.footer-mid a div:hover {
+    background: linear-gradient(90deg, rgba(197, 71, 255, 1), #E04567);
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: 0.2s;
+}
+
+#facebook-icon,
+#instagram-icon,
+#tiktok-icon,
+#whatsapp-icon {
+    padding: 14.5px 6.5px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+#facebook-icon {
+    background-color: #235BA0;
+    padding: 14.5px 9px;
+}
+
+#instagram-icon {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+#tiktok-icon {
+    background-color: black;
+}
+
+#whatsapp-icon {
+    background-color: #46A51E;
+}
+
+
+
+.footer-right {
+    margin-left: 300px;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    column-gap: 5px;
+}
+
+.footer-right-text {
+    max-width: 300px;
+}
+
+
+.final-section {
+    background-color: black;
+    font-size: 15px;
+}
+
+.final-section a {
+    text-decoration: none;
+    color: white;
+}
+
+.final-section i {
+    margin-left: 10px;
+}
+
+.final-section div {
+    display: inline;
+    margin-left: 5px;
+}
+
+@media (max-width:970px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-right {
+        margin-top: 21px;
+        margin-left: 19px;
+        row-gap: 21px;
+    }
+
+    .footer-left {
+        margin-left: 10px;
+        grid-template-columns: 40px 1fr;
+        margin-bottom: 10px;
+    }
+
+    .company-logo-container {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:1240px) {
+
+    .footer-right {
+        margin-left: 19px;
+    }
+}
